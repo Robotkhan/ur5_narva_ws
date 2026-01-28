@@ -1,0 +1,39 @@
+[0.096s] Invoking command in '/home/kanat/ur5_new_ws/build/robotiq_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kanat/ur5_new_ws/src/ros2_robotiq_gripper/robotiq_controllers -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/robotiq_controllers
+[0.297s] -- The C compiler identification is GNU 13.3.0
+[0.474s] -- The CXX compiler identification is GNU 13.3.0
+[0.523s] -- Detecting C compiler ABI info
+[0.806s] -- Detecting C compiler ABI info - done
+[0.834s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.835s] -- Detecting C compile features
+[0.836s] -- Detecting C compile features - done
+[0.862s] -- Detecting CXX compiler ABI info
+[1.161s] -- Detecting CXX compiler ABI info - done
+[1.203s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.205s] -- Detecting CXX compile features
+[1.206s] -- Detecting CXX compile features - done
+[1.223s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.831s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.319s] -- Found controller_interface: 4.39.2 (/opt/ros/jazzy/share/controller_interface/cmake)
+[2.661s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.754s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.862s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.976s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.746s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.922s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.937s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.032s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.230s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.240s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.305s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.315s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.340s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[4.387s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.231s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[5.275s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.505s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.506s] -- Configured cppcheck include dirs: /home/kanat/ur5_new_ws/src/ros2_robotiq_gripper/robotiq_controllers/include
+[5.506s] -- Configured cppcheck exclude dirs and/or files: 
+[5.508s] -- Added test 'lint_cmake' to check CMake code style
+[5.514s] -- Configuring done (5.4s)
+[5.557s] -- Generating done (0.0s)
+[5.566s] -- Build files have been written to: /home/kanat/ur5_new_ws/build/robotiq_controllers

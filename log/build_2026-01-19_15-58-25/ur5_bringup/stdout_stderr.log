@@ -1,0 +1,26 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kanat/ur5_new_ws/build/ur5_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/launch/ur5_gazebo.launch.py
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/launch/ur5_launch.launch.py
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/rviz/rviz_default.rviz
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/config/ros2_controllers.yaml
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ament_index/resource_index/package_run_dependencies/ur5_bringup
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ament_index/resource_index/parent_prefix_path/ur5_bringup
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/environment/path.sh
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/environment/path.dsv
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/local_setup.bash
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/local_setup.sh
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/local_setup.zsh
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/local_setup.dsv
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/package.dsv
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ament_index/resource_index/packages/ur5_bringup
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/cmake/ur5_bringupConfig.cmake
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/cmake/ur5_bringupConfig-version.cmake
+-- Symlinking: /home/kanat/ur5_new_ws/install/ur5_bringup/share/ur5_bringup/package.xml

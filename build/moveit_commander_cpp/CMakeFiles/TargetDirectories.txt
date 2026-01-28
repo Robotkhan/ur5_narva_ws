@@ -1,0 +1,10 @@
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/uninstall.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/moveit_commander_cpp_uninstall.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/moveit_planning_exe.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/test.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/edit_cache.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/rebuild_cache.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/list_install_components.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/install.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/install/local.dir
+/home/kanat/ur5_new_ws/build/moveit_commander_cpp/CMakeFiles/install/strip.dir

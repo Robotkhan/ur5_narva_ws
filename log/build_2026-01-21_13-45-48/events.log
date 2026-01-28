@@ -1,0 +1,372 @@
+[0.000000] (-) TimerEvent: {}
+[0.000414] (-) JobUnselected: {'identifier': 'ur5_bringup'}
+[0.000534] (-) JobUnselected: {'identifier': 'ur5_control'}
+[0.000602] (-) JobUnselected: {'identifier': 'ur5_moveit_config'}
+[0.000655] (-) JobUnselected: {'identifier': 'ur_custom_sim'}
+[0.000695] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.000729] (-) JobUnselected: {'identifier': 'ur_simulation_gz'}
+[0.000767] (moveit_commander_cpp) JobQueued: {'identifier': 'moveit_commander_cpp', 'dependencies': OrderedDict()}
+[0.002582] (moveit_commander_cpp) JobStarted: {'identifier': 'moveit_commander_cpp'}
+[0.054385] (moveit_commander_cpp) JobProgress: {'identifier': 'moveit_commander_cpp', 'progress': 'cmake'}
+[0.060291] (moveit_commander_cpp) JobProgress: {'identifier': 'moveit_commander_cpp', 'progress': 'build'}
+[0.060615] (moveit_commander_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', '--', '-j20', '-l20'], 'cwd': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/kanat/gazebo_models:/home/kanat/panda_robot_ws/install/panda_description/share:/home/kanat/dobot_ws/install/dobot_rviz/share', 'USER': 'kanat', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/kanat', 'OLDPWD': '/home/kanat', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '2842', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'CARLA_ROOT': '/media/kanat/Kanat/carla_ws/CARLA_Latest', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/kanat/ur5_new_ws/install:/home/kanat/ros2_udemy_beginner/install:/home/kanat/turtlebot3_ws/install:/home/kanat/custom_manipulator_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kanat', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kanat', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/kanat/myenv/bin:/media/kanat/MyDisk/miniconda3/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/kanat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kanat-ThinkPad-P16v-Gen-1:@/tmp/.ICE-unix/2798,unix/kanat-ThinkPad-P16v-Gen-1:/tmp/.ICE-unix/2798', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b81307a4_a34d_4e95_8736_acee93e0f710', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'URYT': '/home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(myenv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.356', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'VIRTUAL_ENV': '/home/kanat/myenv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/kanat/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/kanat/ur5_new_ws/build/ur5_control:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:/home/kanat/turtlebot3_ws/build/turtlebot3_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control/lib/python3.12/site-packages:/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/build/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_pkg_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64.whl:/home/kanat/myenv/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy'}), 'shell': False}
+[0.098403] (-) TimerEvent: {}
+[0.199214] (-) TimerEvent: {}
+[0.300182] (-) TimerEvent: {}
+[0.343473] (moveit_commander_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/moveit_planning_exe.dir/src/moveit_plan_publisher.cpp.o\x1b[0m\n'}
+[0.400389] (-) TimerEvent: {}
+[0.501205] (-) TimerEvent: {}
+[0.601889] (-) TimerEvent: {}
+[0.702555] (-) TimerEvent: {}
+[0.803283] (-) TimerEvent: {}
+[0.903891] (-) TimerEvent: {}
+[1.004474] (-) TimerEvent: {}
+[1.105524] (-) TimerEvent: {}
+[1.206537] (-) TimerEvent: {}
+[1.307540] (-) TimerEvent: {}
+[1.408305] (-) TimerEvent: {}
+[1.508996] (-) TimerEvent: {}
+[1.609655] (-) TimerEvent: {}
+[1.710590] (-) TimerEvent: {}
+[1.811352] (-) TimerEvent: {}
+[1.912219] (-) TimerEvent: {}
+[2.012851] (-) TimerEvent: {}
+[2.113509] (-) TimerEvent: {}
+[2.214453] (-) TimerEvent: {}
+[2.315381] (-) TimerEvent: {}
+[2.416102] (-) TimerEvent: {}
+[2.516743] (-) TimerEvent: {}
+[2.617299] (-) TimerEvent: {}
+[2.717937] (-) TimerEvent: {}
+[2.818668] (-) TimerEvent: {}
+[2.919527] (-) TimerEvent: {}
+[3.020532] (-) TimerEvent: {}
+[3.121392] (-) TimerEvent: {}
+[3.222378] (-) TimerEvent: {}
+[3.323077] (-) TimerEvent: {}
+[3.424251] (-) TimerEvent: {}
+[3.525111] (-) TimerEvent: {}
+[3.625822] (-) TimerEvent: {}
+[3.726611] (-) TimerEvent: {}
+[3.827849] (-) TimerEvent: {}
+[3.928654] (-) TimerEvent: {}
+[4.029515] (-) TimerEvent: {}
+[4.130343] (-) TimerEvent: {}
+[4.230994] (-) TimerEvent: {}
+[4.332068] (-) TimerEvent: {}
+[4.433289] (-) TimerEvent: {}
+[4.533911] (-) TimerEvent: {}
+[4.634496] (-) TimerEvent: {}
+[4.735124] (-) TimerEvent: {}
+[4.835838] (-) TimerEvent: {}
+[4.936615] (-) TimerEvent: {}
+[5.037604] (-) TimerEvent: {}
+[5.138557] (-) TimerEvent: {}
+[5.239395] (-) TimerEvent: {}
+[5.340527] (-) TimerEvent: {}
+[5.441766] (-) TimerEvent: {}
+[5.542433] (-) TimerEvent: {}
+[5.643480] (-) TimerEvent: {}
+[5.745084] (-) TimerEvent: {}
+[5.845716] (-) TimerEvent: {}
+[5.946384] (-) TimerEvent: {}
+[6.046985] (-) TimerEvent: {}
+[6.147542] (-) TimerEvent: {}
+[6.248080] (-) TimerEvent: {}
+[6.348650] (-) TimerEvent: {}
+[6.449449] (-) TimerEvent: {}
+[6.550131] (-) TimerEvent: {}
+[6.651215] (-) TimerEvent: {}
+[6.752158] (-) TimerEvent: {}
+[6.852958] (-) TimerEvent: {}
+[6.953831] (-) TimerEvent: {}
+[7.054767] (-) TimerEvent: {}
+[7.156204] (-) TimerEvent: {}
+[7.257125] (-) TimerEvent: {}
+[7.358016] (-) TimerEvent: {}
+[7.458803] (-) TimerEvent: {}
+[7.559651] (-) TimerEvent: {}
+[7.661049] (-) TimerEvent: {}
+[7.761798] (-) TimerEvent: {}
+[7.862744] (-) TimerEvent: {}
+[7.963566] (-) TimerEvent: {}
+[8.064341] (-) TimerEvent: {}
+[8.164999] (-) TimerEvent: {}
+[8.265876] (-) TimerEvent: {}
+[8.366634] (-) TimerEvent: {}
+[8.467415] (-) TimerEvent: {}
+[8.568223] (-) TimerEvent: {}
+[8.668959] (-) TimerEvent: {}
+[8.769965] (-) TimerEvent: {}
+[8.870547] (-) TimerEvent: {}
+[8.971484] (-) TimerEvent: {}
+[9.072189] (-) TimerEvent: {}
+[9.172875] (-) TimerEvent: {}
+[9.274339] (-) TimerEvent: {}
+[9.375047] (-) TimerEvent: {}
+[9.475818] (-) TimerEvent: {}
+[9.576536] (-) TimerEvent: {}
+[9.677289] (-) TimerEvent: {}
+[9.778215] (-) TimerEvent: {}
+[9.878887] (-) TimerEvent: {}
+[9.979545] (-) TimerEvent: {}
+[10.080265] (-) TimerEvent: {}
+[10.180891] (-) TimerEvent: {}
+[10.281646] (-) TimerEvent: {}
+[10.382511] (-) TimerEvent: {}
+[10.483386] (-) TimerEvent: {}
+[10.584080] (-) TimerEvent: {}
+[10.684761] (-) TimerEvent: {}
+[10.785747] (-) TimerEvent: {}
+[10.886412] (-) TimerEvent: {}
+[10.987370] (-) TimerEvent: {}
+[11.088226] (-) TimerEvent: {}
+[11.189226] (-) TimerEvent: {}
+[11.290035] (-) TimerEvent: {}
+[11.390639] (-) TimerEvent: {}
+[11.491248] (-) TimerEvent: {}
+[11.592043] (-) TimerEvent: {}
+[11.692629] (-) TimerEvent: {}
+[11.793212] (-) TimerEvent: {}
+[11.893794] (-) TimerEvent: {}
+[11.994562] (-) TimerEvent: {}
+[12.095099] (-) TimerEvent: {}
+[12.195653] (-) TimerEvent: {}
+[12.296279] (-) TimerEvent: {}
+[12.396815] (-) TimerEvent: {}
+[12.497361] (-) TimerEvent: {}
+[12.597910] (-) TimerEvent: {}
+[12.698734] (-) TimerEvent: {}
+[12.799400] (-) TimerEvent: {}
+[12.900121] (-) TimerEvent: {}
+[13.000995] (-) TimerEvent: {}
+[13.101786] (-) TimerEvent: {}
+[13.202508] (-) TimerEvent: {}
+[13.303299] (-) TimerEvent: {}
+[13.404028] (-) TimerEvent: {}
+[13.504980] (-) TimerEvent: {}
+[13.605988] (-) TimerEvent: {}
+[13.706700] (-) TimerEvent: {}
+[13.807516] (-) TimerEvent: {}
+[13.908238] (-) TimerEvent: {}
+[14.008993] (-) TimerEvent: {}
+[14.109615] (-) TimerEvent: {}
+[14.210529] (-) TimerEvent: {}
+[14.311174] (-) TimerEvent: {}
+[14.411797] (-) TimerEvent: {}
+[14.512665] (-) TimerEvent: {}
+[14.613247] (-) TimerEvent: {}
+[14.713786] (-) TimerEvent: {}
+[14.814361] (-) TimerEvent: {}
+[14.915081] (-) TimerEvent: {}
+[15.015745] (-) TimerEvent: {}
+[15.116314] (-) TimerEvent: {}
+[15.217053] (-) TimerEvent: {}
+[15.317757] (-) TimerEvent: {}
+[15.418460] (-) TimerEvent: {}
+[15.519446] (-) TimerEvent: {}
+[15.620197] (-) TimerEvent: {}
+[15.720901] (-) TimerEvent: {}
+[15.821642] (-) TimerEvent: {}
+[15.922317] (-) TimerEvent: {}
+[16.022889] (-) TimerEvent: {}
+[16.123549] (-) TimerEvent: {}
+[16.224233] (-) TimerEvent: {}
+[16.325072] (-) TimerEvent: {}
+[16.425663] (-) TimerEvent: {}
+[16.526381] (-) TimerEvent: {}
+[16.627990] (-) TimerEvent: {}
+[16.728580] (-) TimerEvent: {}
+[16.829189] (-) TimerEvent: {}
+[16.929662] (-) TimerEvent: {}
+[17.030344] (-) TimerEvent: {}
+[17.131097] (-) TimerEvent: {}
+[17.231777] (-) TimerEvent: {}
+[17.332453] (-) TimerEvent: {}
+[17.432973] (-) TimerEvent: {}
+[17.533636] (-) TimerEvent: {}
+[17.634804] (-) TimerEvent: {}
+[17.735618] (-) TimerEvent: {}
+[17.836316] (-) TimerEvent: {}
+[17.936969] (-) TimerEvent: {}
+[18.037640] (-) TimerEvent: {}
+[18.138310] (-) TimerEvent: {}
+[18.238966] (-) TimerEvent: {}
+[18.339681] (-) TimerEvent: {}
+[18.440753] (-) TimerEvent: {}
+[18.541667] (-) TimerEvent: {}
+[18.642645] (-) TimerEvent: {}
+[18.743379] (-) TimerEvent: {}
+[18.844268] (-) TimerEvent: {}
+[18.945180] (-) TimerEvent: {}
+[19.046008] (-) TimerEvent: {}
+[19.146606] (-) TimerEvent: {}
+[19.247202] (-) TimerEvent: {}
+[19.347894] (-) TimerEvent: {}
+[19.449002] (-) TimerEvent: {}
+[19.549680] (-) TimerEvent: {}
+[19.650566] (-) TimerEvent: {}
+[19.751421] (-) TimerEvent: {}
+[19.852199] (-) TimerEvent: {}
+[19.953289] (-) TimerEvent: {}
+[20.054324] (-) TimerEvent: {}
+[20.155065] (-) TimerEvent: {}
+[20.256148] (-) TimerEvent: {}
+[20.357736] (-) TimerEvent: {}
+[20.458529] (-) TimerEvent: {}
+[20.559948] (-) TimerEvent: {}
+[20.660678] (-) TimerEvent: {}
+[20.761322] (-) TimerEvent: {}
+[20.862056] (-) TimerEvent: {}
+[20.962646] (-) TimerEvent: {}
+[21.063285] (-) TimerEvent: {}
+[21.164075] (-) TimerEvent: {}
+[21.264679] (-) TimerEvent: {}
+[21.365410] (-) TimerEvent: {}
+[21.466100] (-) TimerEvent: {}
+[21.566737] (-) TimerEvent: {}
+[21.667445] (-) TimerEvent: {}
+[21.768210] (-) TimerEvent: {}
+[21.868994] (-) TimerEvent: {}
+[21.969684] (-) TimerEvent: {}
+[22.070602] (-) TimerEvent: {}
+[22.171353] (-) TimerEvent: {}
+[22.271956] (-) TimerEvent: {}
+[22.372673] (-) TimerEvent: {}
+[22.473702] (-) TimerEvent: {}
+[22.574965] (-) TimerEvent: {}
+[22.675573] (-) TimerEvent: {}
+[22.776346] (-) TimerEvent: {}
+[22.876981] (-) TimerEvent: {}
+[22.977579] (-) TimerEvent: {}
+[23.078148] (-) TimerEvent: {}
+[23.178716] (-) TimerEvent: {}
+[23.279294] (-) TimerEvent: {}
+[23.379805] (-) TimerEvent: {}
+[23.480340] (-) TimerEvent: {}
+[23.580891] (-) TimerEvent: {}
+[23.681755] (-) TimerEvent: {}
+[23.782410] (-) TimerEvent: {}
+[23.883111] (-) TimerEvent: {}
+[23.983786] (-) TimerEvent: {}
+[24.085095] (-) TimerEvent: {}
+[24.185841] (-) TimerEvent: {}
+[24.286670] (-) TimerEvent: {}
+[24.387364] (-) TimerEvent: {}
+[24.487975] (-) TimerEvent: {}
+[24.588559] (-) TimerEvent: {}
+[24.689593] (-) TimerEvent: {}
+[24.790535] (-) TimerEvent: {}
+[24.891443] (-) TimerEvent: {}
+[24.992191] (-) TimerEvent: {}
+[25.092818] (-) TimerEvent: {}
+[25.193591] (-) TimerEvent: {}
+[25.294190] (-) TimerEvent: {}
+[25.395073] (-) TimerEvent: {}
+[25.495718] (-) TimerEvent: {}
+[25.596501] (-) TimerEvent: {}
+[25.697163] (-) TimerEvent: {}
+[25.797979] (-) TimerEvent: {}
+[25.899045] (-) TimerEvent: {}
+[25.999556] (-) TimerEvent: {}
+[26.100050] (-) TimerEvent: {}
+[26.200601] (-) TimerEvent: {}
+[26.301208] (-) TimerEvent: {}
+[26.401829] (-) TimerEvent: {}
+[26.502483] (-) TimerEvent: {}
+[26.603146] (-) TimerEvent: {}
+[26.703897] (-) TimerEvent: {}
+[26.804826] (-) TimerEvent: {}
+[26.905524] (-) TimerEvent: {}
+[27.006488] (-) TimerEvent: {}
+[27.107381] (-) TimerEvent: {}
+[27.208468] (-) TimerEvent: {}
+[27.309137] (-) TimerEvent: {}
+[27.409837] (-) TimerEvent: {}
+[27.510693] (-) TimerEvent: {}
+[27.611306] (-) TimerEvent: {}
+[27.712010] (-) TimerEvent: {}
+[27.812720] (-) TimerEvent: {}
+[27.913313] (-) TimerEvent: {}
+[28.013850] (-) TimerEvent: {}
+[28.114386] (-) TimerEvent: {}
+[28.214964] (-) TimerEvent: {}
+[28.315513] (-) TimerEvent: {}
+[28.416107] (-) TimerEvent: {}
+[28.516773] (-) TimerEvent: {}
+[28.617577] (-) TimerEvent: {}
+[28.718528] (-) TimerEvent: {}
+[28.819990] (-) TimerEvent: {}
+[28.920617] (-) TimerEvent: {}
+[29.021240] (-) TimerEvent: {}
+[29.121873] (-) TimerEvent: {}
+[29.222600] (-) TimerEvent: {}
+[29.323214] (-) TimerEvent: {}
+[29.423842] (-) TimerEvent: {}
+[29.524804] (-) TimerEvent: {}
+[29.625495] (-) TimerEvent: {}
+[29.726211] (-) TimerEvent: {}
+[29.826982] (-) TimerEvent: {}
+[29.927620] (-) TimerEvent: {}
+[30.028328] (-) TimerEvent: {}
+[30.128982] (-) TimerEvent: {}
+[30.229625] (-) TimerEvent: {}
+[30.330264] (-) TimerEvent: {}
+[30.430956] (-) TimerEvent: {}
+[30.531627] (-) TimerEvent: {}
+[30.632365] (-) TimerEvent: {}
+[30.733041] (-) TimerEvent: {}
+[30.833683] (-) TimerEvent: {}
+[30.934387] (-) TimerEvent: {}
+[31.035062] (-) TimerEvent: {}
+[31.135832] (-) TimerEvent: {}
+[31.236687] (-) TimerEvent: {}
+[31.324166] (moveit_commander_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable moveit_planning_exe\x1b[0m\n'}
+[31.336864] (-) TimerEvent: {}
+[31.437725] (-) TimerEvent: {}
+[31.538545] (-) TimerEvent: {}
+[31.639247] (-) TimerEvent: {}
+[31.739897] (-) TimerEvent: {}
+[31.840474] (-) TimerEvent: {}
+[31.941081] (-) TimerEvent: {}
+[32.041800] (-) TimerEvent: {}
+[32.142617] (-) TimerEvent: {}
+[32.244037] (-) TimerEvent: {}
+[32.344827] (-) TimerEvent: {}
+[32.445487] (-) TimerEvent: {}
+[32.546048] (-) TimerEvent: {}
+[32.646602] (-) TimerEvent: {}
+[32.747243] (-) TimerEvent: {}
+[32.814116] (moveit_commander_cpp) StdoutLine: {'line': b'[100%] Built target moveit_planning_exe\n'}
+[32.847449] (-) TimerEvent: {}
+[32.854755] (moveit_commander_cpp) CommandEnded: {'returncode': 0}
+[32.858846] (moveit_commander_cpp) JobProgress: {'identifier': 'moveit_commander_cpp', 'progress': 'install'}
+[32.895778] (moveit_commander_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kanat/ur5_new_ws/build/moveit_commander_cpp'], 'cwd': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/kanat/gazebo_models:/home/kanat/panda_robot_ws/install/panda_description/share:/home/kanat/dobot_ws/install/dobot_rviz/share', 'USER': 'kanat', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/kanat', 'OLDPWD': '/home/kanat', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '2842', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'CARLA_ROOT': '/media/kanat/Kanat/carla_ws/CARLA_Latest', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/kanat/ur5_new_ws/install:/home/kanat/ros2_udemy_beginner/install:/home/kanat/turtlebot3_ws/install:/home/kanat/custom_manipulator_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kanat', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kanat', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/kanat/myenv/bin:/media/kanat/MyDisk/miniconda3/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/kanat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kanat-ThinkPad-P16v-Gen-1:@/tmp/.ICE-unix/2798,unix/kanat-ThinkPad-P16v-Gen-1:/tmp/.ICE-unix/2798', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b81307a4_a34d_4e95_8736_acee93e0f710', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'URYT': '/home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(myenv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.356', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'VIRTUAL_ENV': '/home/kanat/myenv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/kanat/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/kanat/ur5_new_ws/build/ur5_control:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:/home/kanat/turtlebot3_ws/build/turtlebot3_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control/lib/python3.12/site-packages:/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/build/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_pkg_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64.whl:/home/kanat/myenv/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy'}), 'shell': False}
+[32.924779] (moveit_commander_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.926497] (moveit_commander_cpp) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[32.927909] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/lib/moveit_commander_cpp/moveit_planning_exe\n'}
+[32.947625] (-) TimerEvent: {}
+[32.961186] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/package_run_dependencies/moveit_commander_cpp\n'}
+[32.997179] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/parent_prefix_path/moveit_commander_cpp\n'}
+[33.032065] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/ament_prefix_path.sh\n'}
+[33.047806] (-) TimerEvent: {}
+[33.065177] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/ament_prefix_path.dsv\n'}
+[33.101582] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/path.sh\n'}
+[33.135938] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/path.dsv\n'}
+[33.147980] (-) TimerEvent: {}
+[33.170356] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.bash\n'}
+[33.200397] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.sh\n'}
+[33.233790] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.zsh\n'}
+[33.248247] (-) TimerEvent: {}
+[33.267790] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.dsv\n'}
+[33.305524] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.dsv\n'}
+[33.341408] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/packages/moveit_commander_cpp\n'}
+[33.348377] (-) TimerEvent: {}
+[33.376771] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/cmake/moveit_commander_cppConfig.cmake\n'}
+[33.412511] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/cmake/moveit_commander_cppConfig-version.cmake\n'}
+[33.447480] (moveit_commander_cpp) StdoutLine: {'line': b'-- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.xml\n'}
+[33.448472] (-) TimerEvent: {}
+[33.486778] (moveit_commander_cpp) CommandEnded: {'returncode': 0}
+[33.549113] (-) TimerEvent: {}
+[33.552847] (moveit_commander_cpp) JobEnded: {'identifier': 'moveit_commander_cpp', 'rc': 0}
+[33.557084] (-) EventReactorShutdown: {}

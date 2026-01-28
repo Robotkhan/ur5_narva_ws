@@ -1,0 +1,9 @@
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/uninstall.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/ur_custom_sim_uninstall.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/test.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/edit_cache.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/rebuild_cache.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/list_install_components.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/install.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/install/local.dir
+/home/kanat/ur5_new_ws/build/ur_custom_sim/CMakeFiles/install/strip.dir

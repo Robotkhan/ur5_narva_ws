@@ -1,0 +1,47 @@
+[0.065s] Invoking command in '/home/kanat/ur5_new_ws/build/ur_custom_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/cmake /home/kanat/ur5_new_ws/src/ur_custom_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/ur_custom_sim
+[0.210s] -- The C compiler identification is GNU 13.3.0
+[0.358s] -- The CXX compiler identification is GNU 13.3.0
+[0.402s] -- Detecting C compiler ABI info
+[0.623s] -- Detecting C compiler ABI info - done
+[0.648s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.649s] -- Detecting C compile features
+[0.650s] -- Detecting C compile features - done
+[0.675s] -- Detecting CXX compiler ABI info
+[0.929s] -- Detecting CXX compiler ABI info - done
+[0.953s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.954s] -- Detecting CXX compile features
+[0.955s] -- Detecting CXX compile features - done
+[0.968s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.300s] -- Found Python3: /home/kanat/myenv/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.499s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.667s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[1.676s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.833s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.883s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.941s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.018s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.223s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.241s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.462s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.505s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.552s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.743s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.775s] -- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[2.861s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.896s] Traceback (most recent call last):
+[2.896s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[2.896s]     from catkin_pkg.package import parse_package_string
+[2.896s] ModuleNotFoundError: No module named 'catkin_pkg'
+[2.900s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.900s]   execute_process(/home/kanat/myenv/bin/python3
+[2.900s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.900s]   /home/kanat/ur5_new_ws/src/ur_custom_sim/package.xml
+[2.901s]   /home/kanat/ur5_new_ws/build/ur_custom_sim/ament_cmake_core/package.cmake)
+[2.901s]   returned error code 1
+[2.901s] Call Stack (most recent call first):
+[2.901s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.901s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[2.901s]   CMakeLists.txt:24 (ament_lint_auto_find_test_dependencies)
+[2.901s] 
+[2.901s] [0m
+[2.901s] -- Configuring incomplete, errors occurred!

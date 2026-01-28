@@ -1,0 +1,43 @@
+[0.129s] Invoking command in '/home/kanat/ur5_new_ws/build/robotiq_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kanat/ur5_new_ws/src/ros2_robotiq_gripper/robotiq_driver -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/robotiq_driver
+[0.394s] -- The CXX compiler identification is GNU 13.3.0
+[0.445s] -- Detecting CXX compiler ABI info
+[0.778s] -- Detecting CXX compiler ABI info - done
+[0.806s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.807s] -- Detecting CXX compile features
+[0.809s] -- Detecting CXX compile features - done
+[0.841s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.388s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.849s] -- Found hardware_interface: 4.39.2 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.179s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.277s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.436s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.272s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.451s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.467s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.562s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.762s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.773s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.835s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.848s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.878s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[3.915s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.945s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[4.945s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[4.945s]   asked CMake to find a package configuration file provided by "serial", but
+[4.945s]   CMake did not find one.
+[4.945s] 
+[4.945s]   Could not find a package configuration file provided by "serial" with any
+[4.945s]   of the following names:
+[4.946s] 
+[4.946s]     serialConfig.cmake
+[4.946s]     serial-config.cmake
+[4.946s] 
+[4.946s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[4.946s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[4.946s]   provides a separate development package or SDK, be sure it has been
+[4.946s]   installed.
+[4.947s] 
+[4.947s] [0m
+[4.947s] -- Configuring incomplete, errors occurred!
+[4.972s] Invoked command in '/home/kanat/ur5_new_ws/build/robotiq_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kanat/ur5_new_ws/src/ros2_robotiq_gripper/robotiq_driver -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/robotiq_driver

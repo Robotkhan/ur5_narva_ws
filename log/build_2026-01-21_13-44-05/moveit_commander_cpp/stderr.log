@@ -1,0 +1,21 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:1[m[K:
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:[m[K In member function ‘[01m[Kvoid Commander::[01;32m[Kplan[m[K(const std::shared_ptr<moveit::planning_interface::MoveGroupInterface>&)[m[K’:
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Commander[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   64 |                 RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "The reference trajectory is valid...");
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Commander[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "The reference trajectory is valid...");
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K:
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Commander[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   64 |                 RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "The reference trajectory is valid...");
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Commander[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   64 |                 RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(), "The reference trajectory is valid...");
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/moveit_planning_exe.dir/build.make:76: CMakeFiles/moveit_planning_exe.dir/src/moveit_plan_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/moveit_planning_exe.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,2 +1,3 @@
 src/Universal_Robots_ROS2_Description/
-
+src/Universal_Robots_ROS2_GZ_Simulation/
+src/ros2_robotiq_gripper/

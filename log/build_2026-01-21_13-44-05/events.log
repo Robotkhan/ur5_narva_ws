@@ -1,0 +1,445 @@
+[0.000000] (-) TimerEvent: {}
+[0.001424] (-) JobUnselected: {'identifier': 'ur5_bringup'}
+[0.002262] (-) JobUnselected: {'identifier': 'ur5_control'}
+[0.002334] (-) JobUnselected: {'identifier': 'ur5_moveit_config'}
+[0.002385] (-) JobUnselected: {'identifier': 'ur_custom_sim'}
+[0.002421] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.002456] (-) JobUnselected: {'identifier': 'ur_simulation_gz'}
+[0.002499] (moveit_commander_cpp) JobQueued: {'identifier': 'moveit_commander_cpp', 'dependencies': OrderedDict()}
+[0.002549] (moveit_commander_cpp) JobStarted: {'identifier': 'moveit_commander_cpp'}
+[0.046200] (moveit_commander_cpp) JobProgress: {'identifier': 'moveit_commander_cpp', 'progress': 'cmake'}
+[0.048621] (moveit_commander_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/kanat/ur5_new_ws/src/moveit_commander_cpp', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/moveit_commander_cpp'], 'cwd': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/kanat/gazebo_models:/home/kanat/panda_robot_ws/install/panda_description/share:/home/kanat/dobot_ws/install/dobot_rviz/share', 'USER': 'kanat', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/kanat', 'OLDPWD': '/home/kanat', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '2842', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'CARLA_ROOT': '/media/kanat/Kanat/carla_ws/CARLA_Latest', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/kanat/ur5_new_ws/install:/home/kanat/ros2_udemy_beginner/install:/home/kanat/turtlebot3_ws/install:/home/kanat/custom_manipulator_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kanat', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kanat', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/kanat/myenv/bin:/media/kanat/MyDisk/miniconda3/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/kanat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kanat-ThinkPad-P16v-Gen-1:@/tmp/.ICE-unix/2798,unix/kanat-ThinkPad-P16v-Gen-1:/tmp/.ICE-unix/2798', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b81307a4_a34d_4e95_8736_acee93e0f710', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'URYT': '/home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(myenv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.356', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'VIRTUAL_ENV': '/home/kanat/myenv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/kanat/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/kanat/ur5_new_ws/build/ur5_control:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:/home/kanat/turtlebot3_ws/build/turtlebot3_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control/lib/python3.12/site-packages:/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/build/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_pkg_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64.whl:/home/kanat/myenv/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy'}), 'shell': False}
+[0.099347] (-) TimerEvent: {}
+[0.200296] (-) TimerEvent: {}
+[0.272163] (moveit_commander_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300491] (-) TimerEvent: {}
+[0.401181] (-) TimerEvent: {}
+[0.483945] (moveit_commander_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.501371] (-) TimerEvent: {}
+[0.548249] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601558] (-) TimerEvent: {}
+[0.702384] (-) TimerEvent: {}
+[0.803104] (-) TimerEvent: {}
+[0.882800] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.903310] (-) TimerEvent: {}
+[0.920332] (moveit_commander_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.921280] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.922261] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.956430] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.003453] (-) TimerEvent: {}
+[1.104024] (-) TimerEvent: {}
+[1.204591] (-) TimerEvent: {}
+[1.305302] (-) TimerEvent: {}
+[1.326211] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.368238] (moveit_commander_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.369212] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.371021] (moveit_commander_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.395416] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.405438] (-) TimerEvent: {}
+[1.506108] (-) TimerEvent: {}
+[1.606976] (-) TimerEvent: {}
+[1.707910] (-) TimerEvent: {}
+[1.808677] (-) TimerEvent: {}
+[1.909625] (-) TimerEvent: {}
+[1.936402] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Python3: /home/kanat/myenv/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.009928] (-) TimerEvent: {}
+[2.110731] (-) TimerEvent: {}
+[2.211484] (-) TimerEvent: {}
+[2.279545] (moveit_commander_cpp) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.312029] (-) TimerEvent: {}
+[2.412975] (-) TimerEvent: {}
+[2.513736] (-) TimerEvent: {}
+[2.560355] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.614152] (-) TimerEvent: {}
+[2.714876] (-) TimerEvent: {}
+[2.815430] (-) TimerEvent: {}
+[2.816051] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.901398] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.915658] (-) TimerEvent: {}
+[3.003292] (moveit_commander_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.016171] (-) TimerEvent: {}
+[3.117175] (-) TimerEvent: {}
+[3.120648] (moveit_commander_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.217372] (-) TimerEvent: {}
+[3.318253] (-) TimerEvent: {}
+[3.418886] (-) TimerEvent: {}
+[3.519574] (-) TimerEvent: {}
+[3.547735] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.571699] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.619767] (-) TimerEvent: {}
+[3.720438] (-) TimerEvent: {}
+[3.821088] (-) TimerEvent: {}
+[3.921737] (-) TimerEvent: {}
+[3.994448] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[4.022010] (-) TimerEvent: {}
+[4.091934] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[4.122205] (-) TimerEvent: {}
+[4.197979] (moveit_commander_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.222468] (-) TimerEvent: {}
+[4.323142] (-) TimerEvent: {}
+[4.423759] (-) TimerEvent: {}
+[4.524472] (-) TimerEvent: {}
+[4.607913] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)\n'}
+[4.624679] (-) TimerEvent: {}
+[4.725300] (-) TimerEvent: {}
+[4.825947] (-) TimerEvent: {}
+[4.927487] (-) TimerEvent: {}
+[5.028446] (-) TimerEvent: {}
+[5.128351] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread \n'}
+[5.129389] (-) TimerEvent: {}
+[5.229903] (-) TimerEvent: {}
+[5.331680] (-) TimerEvent: {}
+[5.432335] (-) TimerEvent: {}
+[5.533262] (-) TimerEvent: {}
+[5.633848] (-) TimerEvent: {}
+[5.734435] (-) TimerEvent: {}
+[5.835219] (-) TimerEvent: {}
+[5.935776] (-) TimerEvent: {}
+[6.036479] (-) TimerEvent: {}
+[6.137440] (-) TimerEvent: {}
+[6.237958] (-) TimerEvent: {}
+[6.339213] (-) TimerEvent: {}
+[6.440034] (-) TimerEvent: {}
+[6.540780] (-) TimerEvent: {}
+[6.641648] (-) TimerEvent: {}
+[6.714611] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[6.741908] (-) TimerEvent: {}
+[6.842493] (-) TimerEvent: {}
+[6.943105] (-) TimerEvent: {}
+[7.043851] (-) TimerEvent: {}
+[7.144535] (-) TimerEvent: {}
+[7.153538] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[7.245072] (-) TimerEvent: {}
+[7.255917] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[7.345408] (-) TimerEvent: {}
+[7.446134] (-) TimerEvent: {}
+[7.473659] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem \n'}
+[7.546328] (-) TimerEvent: {}
+[7.647165] (-) TimerEvent: {}
+[7.748199] (-) TimerEvent: {}
+[7.848967] (-) TimerEvent: {}
+[7.872115] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[7.873378] (moveit_commander_cpp) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.949147] (-) TimerEvent: {}
+[8.049749] (-) TimerEvent: {}
+[8.150371] (-) TimerEvent: {}
+[8.250937] (-) TimerEvent: {}
+[8.351459] (-) TimerEvent: {}
+[8.452071] (-) TimerEvent: {}
+[8.552641] (-) TimerEvent: {}
+[8.653220] (-) TimerEvent: {}
+[8.753954] (-) TimerEvent: {}
+[8.854586] (-) TimerEvent: {}
+[8.879028] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono \n'}
+[8.954753] (-) TimerEvent: {}
+[9.055470] (-) TimerEvent: {}
+[9.137948] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options \n'}
+[9.155649] (-) TimerEvent: {}
+[9.256472] (-) TimerEvent: {}
+[9.296947] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread \n'}
+[9.356649] (-) TimerEvent: {}
+[9.457445] (-) TimerEvent: {}
+[9.517435] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)\n'}
+[9.557662] (-) TimerEvent: {}
+[9.624724] (moveit_commander_cpp) StdoutLine: {'line': b'-- Found my_interfaces: 0.0.0 (/home/kanat/ros2_udemy_beginner/install/my_interfaces/share/my_interfaces/cmake)\n'}
+[9.657869] (-) TimerEvent: {}
+[9.758512] (-) TimerEvent: {}
+[9.859347] (-) TimerEvent: {}
+[9.960263] (-) TimerEvent: {}
+[10.060975] (-) TimerEvent: {}
+[10.149152] (moveit_commander_cpp) StdoutLine: {'line': b'-- Configuring done (10.1s)\n'}
+[10.161438] (-) TimerEvent: {}
+[10.262143] (-) TimerEvent: {}
+[10.276839] (moveit_commander_cpp) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[10.304619] (moveit_commander_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/kanat/ur5_new_ws/build/moveit_commander_cpp\n'}
+[10.358999] (moveit_commander_cpp) CommandEnded: {'returncode': 0}
+[10.362467] (-) TimerEvent: {}
+[10.362893] (moveit_commander_cpp) JobProgress: {'identifier': 'moveit_commander_cpp', 'progress': 'build'}
+[10.365487] (moveit_commander_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', '--', '-j20', '-l20'], 'cwd': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share:/home/kanat/gazebo_models:/home/kanat/panda_robot_ws/install/panda_description/share:/home/kanat/dobot_ws/install/dobot_rviz/share', 'USER': 'kanat', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/kanat', 'OLDPWD': '/home/kanat', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(myenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '2842', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'CARLA_ROOT': '/media/kanat/Kanat/carla_ws/CARLA_Latest', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/kanat/ur5_new_ws/install:/home/kanat/ros2_udemy_beginner/install:/home/kanat/turtlebot3_ws/install:/home/kanat/custom_manipulator_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'kanat', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kanat', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/kanat/myenv/bin:/media/kanat/MyDisk/miniconda3/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/kanat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kanat-ThinkPad-P16v-Gen-1:@/tmp/.ICE-unix/2798,unix/kanat-ThinkPad-P16v-Gen-1:/tmp/.ICE-unix/2798', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b81307a4_a34d_4e95_8736_acee93e0f710', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'URYT': '/home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(myenv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.356', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'VIRTUAL_ENV': '/home/kanat/myenv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/kanat/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/kanat/ur5_new_ws/build/ur5_control:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:/home/kanat/turtlebot3_ws/build/turtlebot3_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control/lib/python3.12/site-packages:/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/build/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_pkg_py/lib/python3.12/site-packages:/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64:/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64.whl:/home/kanat/myenv/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/kanat/ur5_new_ws/install/ur_simulation_gz:/home/kanat/ur5_new_ws/install/ur_description:/home/kanat/ur5_new_ws/install/ur5_moveit_config:/home/kanat/ur5_new_ws/install/ur_custom_sim:/home/kanat/ur5_new_ws/install/ur5_bringup:/home/kanat/turtlebot3_ws/install/turtlebot3_simulations:/home/kanat/turtlebot3_ws/install/turtlebot3_gazebo:/home/kanat/turtlebot3_ws/install/turtlebot3_fake_node:/home/kanat/custom_manipulator_ws/install/custom_manipulator_bringup:/home/kanat/custom_manipulator_ws/install/custom_manipulator_moveit_config:/home/kanat/custom_manipulator_ws/install/custom_manipulator_description:/home/kanat/custom_manipulator_ws/install/custom_manipulator_commander_cpp:/home/kanat/custom_manipulator_ws/install/custom_interfaces:/home/kanat/ros2_udemy_beginner/install/my_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy'}), 'shell': False}
+[10.462921] (-) TimerEvent: {}
+[10.563548] (-) TimerEvent: {}
+[10.578200] (moveit_commander_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/moveit_planning_exe.dir/src/moveit_plan_publisher.cpp.o\x1b[0m\n'}
+[10.663782] (-) TimerEvent: {}
+[10.764485] (-) TimerEvent: {}
+[10.865211] (-) TimerEvent: {}
+[10.966110] (-) TimerEvent: {}
+[11.066948] (-) TimerEvent: {}
+[11.167556] (-) TimerEvent: {}
+[11.268262] (-) TimerEvent: {}
+[11.368952] (-) TimerEvent: {}
+[11.469726] (-) TimerEvent: {}
+[11.570558] (-) TimerEvent: {}
+[11.671305] (-) TimerEvent: {}
+[11.771900] (-) TimerEvent: {}
+[11.872414] (-) TimerEvent: {}
+[11.973083] (-) TimerEvent: {}
+[12.073971] (-) TimerEvent: {}
+[12.174781] (-) TimerEvent: {}
+[12.275596] (-) TimerEvent: {}
+[12.376267] (-) TimerEvent: {}
+[12.476796] (-) TimerEvent: {}
+[12.577638] (-) TimerEvent: {}
+[12.678306] (-) TimerEvent: {}
+[12.779171] (-) TimerEvent: {}
+[12.879794] (-) TimerEvent: {}
+[12.980615] (-) TimerEvent: {}
+[13.082287] (-) TimerEvent: {}
+[13.183021] (-) TimerEvent: {}
+[13.283773] (-) TimerEvent: {}
+[13.384372] (-) TimerEvent: {}
+[13.484906] (-) TimerEvent: {}
+[13.585423] (-) TimerEvent: {}
+[13.686010] (-) TimerEvent: {}
+[13.786756] (-) TimerEvent: {}
+[13.887439] (-) TimerEvent: {}
+[13.988153] (-) TimerEvent: {}
+[14.089305] (-) TimerEvent: {}
+[14.189936] (-) TimerEvent: {}
+[14.290509] (-) TimerEvent: {}
+[14.391180] (-) TimerEvent: {}
+[14.491737] (-) TimerEvent: {}
+[14.592440] (-) TimerEvent: {}
+[14.693292] (-) TimerEvent: {}
+[14.794123] (-) TimerEvent: {}
+[14.895214] (-) TimerEvent: {}
+[14.996253] (-) TimerEvent: {}
+[15.096956] (-) TimerEvent: {}
+[15.197906] (-) TimerEvent: {}
+[15.298771] (-) TimerEvent: {}
+[15.399587] (-) TimerEvent: {}
+[15.500158] (-) TimerEvent: {}
+[15.600676] (-) TimerEvent: {}
+[15.701281] (-) TimerEvent: {}
+[15.802072] (-) TimerEvent: {}
+[15.902611] (-) TimerEvent: {}
+[16.003332] (-) TimerEvent: {}
+[16.103918] (-) TimerEvent: {}
+[16.204494] (-) TimerEvent: {}
+[16.305224] (-) TimerEvent: {}
+[16.406107] (-) TimerEvent: {}
+[16.506882] (-) TimerEvent: {}
+[16.607553] (-) TimerEvent: {}
+[16.708224] (-) TimerEvent: {}
+[16.808868] (-) TimerEvent: {}
+[16.909545] (-) TimerEvent: {}
+[17.010397] (-) TimerEvent: {}
+[17.110962] (-) TimerEvent: {}
+[17.211575] (-) TimerEvent: {}
+[17.312390] (-) TimerEvent: {}
+[17.414020] (-) TimerEvent: {}
+[17.514684] (-) TimerEvent: {}
+[17.615366] (-) TimerEvent: {}
+[17.716097] (-) TimerEvent: {}
+[17.816796] (-) TimerEvent: {}
+[17.917506] (-) TimerEvent: {}
+[18.018203] (-) TimerEvent: {}
+[18.118850] (-) TimerEvent: {}
+[18.219524] (-) TimerEvent: {}
+[18.320303] (-) TimerEvent: {}
+[18.420937] (-) TimerEvent: {}
+[18.521580] (-) TimerEvent: {}
+[18.622754] (-) TimerEvent: {}
+[18.723586] (-) TimerEvent: {}
+[18.824421] (-) TimerEvent: {}
+[18.925035] (-) TimerEvent: {}
+[19.025684] (-) TimerEvent: {}
+[19.126304] (-) TimerEvent: {}
+[19.226957] (-) TimerEvent: {}
+[19.327571] (-) TimerEvent: {}
+[19.428436] (-) TimerEvent: {}
+[19.529909] (-) TimerEvent: {}
+[19.630621] (-) TimerEvent: {}
+[19.731916] (-) TimerEvent: {}
+[19.832532] (-) TimerEvent: {}
+[19.933094] (-) TimerEvent: {}
+[20.033759] (-) TimerEvent: {}
+[20.134450] (-) TimerEvent: {}
+[20.235249] (-) TimerEvent: {}
+[20.336264] (-) TimerEvent: {}
+[20.436792] (-) TimerEvent: {}
+[20.537355] (-) TimerEvent: {}
+[20.638252] (-) TimerEvent: {}
+[20.739032] (-) TimerEvent: {}
+[20.839858] (-) TimerEvent: {}
+[20.940526] (-) TimerEvent: {}
+[21.041443] (-) TimerEvent: {}
+[21.142369] (-) TimerEvent: {}
+[21.243307] (-) TimerEvent: {}
+[21.343960] (-) TimerEvent: {}
+[21.444864] (-) TimerEvent: {}
+[21.545791] (-) TimerEvent: {}
+[21.646407] (-) TimerEvent: {}
+[21.746958] (-) TimerEvent: {}
+[21.847536] (-) TimerEvent: {}
+[21.948161] (-) TimerEvent: {}
+[22.049136] (-) TimerEvent: {}
+[22.149708] (-) TimerEvent: {}
+[22.250313] (-) TimerEvent: {}
+[22.350901] (-) TimerEvent: {}
+[22.451425] (-) TimerEvent: {}
+[22.551975] (-) TimerEvent: {}
+[22.652610] (-) TimerEvent: {}
+[22.753499] (-) TimerEvent: {}
+[22.854082] (-) TimerEvent: {}
+[22.954663] (-) TimerEvent: {}
+[23.055502] (-) TimerEvent: {}
+[23.156316] (-) TimerEvent: {}
+[23.257091] (-) TimerEvent: {}
+[23.357794] (-) TimerEvent: {}
+[23.458527] (-) TimerEvent: {}
+[23.559249] (-) TimerEvent: {}
+[23.660121] (-) TimerEvent: {}
+[23.761211] (-) TimerEvent: {}
+[23.862036] (-) TimerEvent: {}
+[23.962730] (-) TimerEvent: {}
+[24.063401] (-) TimerEvent: {}
+[24.164126] (-) TimerEvent: {}
+[24.264902] (-) TimerEvent: {}
+[24.366179] (-) TimerEvent: {}
+[24.466879] (-) TimerEvent: {}
+[24.567649] (-) TimerEvent: {}
+[24.668293] (-) TimerEvent: {}
+[24.768944] (-) TimerEvent: {}
+[24.869613] (-) TimerEvent: {}
+[24.970330] (-) TimerEvent: {}
+[25.070989] (-) TimerEvent: {}
+[25.171643] (-) TimerEvent: {}
+[25.272304] (-) TimerEvent: {}
+[25.372989] (-) TimerEvent: {}
+[25.473694] (-) TimerEvent: {}
+[25.574416] (-) TimerEvent: {}
+[25.675372] (-) TimerEvent: {}
+[25.776282] (-) TimerEvent: {}
+[25.877045] (-) TimerEvent: {}
+[25.977778] (-) TimerEvent: {}
+[26.078510] (-) TimerEvent: {}
+[26.179426] (-) TimerEvent: {}
+[26.280413] (-) TimerEvent: {}
+[26.381039] (-) TimerEvent: {}
+[26.481687] (-) TimerEvent: {}
+[26.582465] (-) TimerEvent: {}
+[26.683166] (-) TimerEvent: {}
+[26.783770] (-) TimerEvent: {}
+[26.884347] (-) TimerEvent: {}
+[26.985118] (-) TimerEvent: {}
+[27.086052] (-) TimerEvent: {}
+[27.186666] (-) TimerEvent: {}
+[27.287241] (-) TimerEvent: {}
+[27.387784] (-) TimerEvent: {}
+[27.488381] (-) TimerEvent: {}
+[27.588963] (-) TimerEvent: {}
+[27.599737] (moveit_commander_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[27.600597] (moveit_commander_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[27.600886] (moveit_commander_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:1\x1b[m\x1b[K:\n'}
+[27.601069] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Commander::\x1b[01;32m\x1b[Kplan\x1b[m\x1b[K(const std::shared_ptr<moveit::planning_interface::MoveGroupInterface>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.601233] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Commander\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.601535] (moveit_commander_cpp) StderrLine: {'line': b'   64 |                 RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "The reference trajectory is valid...");\n'}
+[27.601718] (moveit_commander_cpp) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.601924] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Commander\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.602108] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[27.602266] (moveit_commander_cpp) StderrLine: {'line': b'   64 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "The reference trajectory is valid...");\n'}
+[27.602425] (moveit_commander_cpp) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.602588] (moveit_commander_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K:\n'}
+[27.602748] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Commander\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.602943] (moveit_commander_cpp) StderrLine: {'line': b'   64 |                 RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "The reference trajectory is valid...");\n'}
+[27.603085] (moveit_commander_cpp) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.603260] (moveit_commander_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kanat/ur5_new_ws/src/moveit_commander_cpp/src/moveit_plan_publisher.cpp:64:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Commander\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.603422] (moveit_commander_cpp) StderrLine: {'line': b'   64 |                 RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "The reference trajectory is valid...");\n'}
+[27.603559] (moveit_commander_cpp) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.689122] (-) TimerEvent: {}
+[27.789748] (-) TimerEvent: {}
+[27.890578] (-) TimerEvent: {}
+[27.991289] (-) TimerEvent: {}
+[28.092205] (-) TimerEvent: {}
+[28.192893] (-) TimerEvent: {}
+[28.293482] (-) TimerEvent: {}
+[28.394378] (-) TimerEvent: {}
+[28.495124] (-) TimerEvent: {}
+[28.595929] (-) TimerEvent: {}
+[28.696968] (-) TimerEvent: {}
+[28.797635] (-) TimerEvent: {}
+[28.898409] (-) TimerEvent: {}
+[28.999222] (-) TimerEvent: {}
+[29.099968] (-) TimerEvent: {}
+[29.200517] (-) TimerEvent: {}
+[29.301050] (-) TimerEvent: {}
+[29.401584] (-) TimerEvent: {}
+[29.502136] (-) TimerEvent: {}
+[29.602927] (-) TimerEvent: {}
+[29.703518] (-) TimerEvent: {}
+[29.804615] (-) TimerEvent: {}
+[29.905209] (-) TimerEvent: {}
+[30.005751] (-) TimerEvent: {}
+[30.106768] (-) TimerEvent: {}
+[30.207679] (-) TimerEvent: {}
+[30.308427] (-) TimerEvent: {}
+[30.409253] (-) TimerEvent: {}
+[30.510006] (-) TimerEvent: {}
+[30.610711] (-) TimerEvent: {}
+[30.711454] (-) TimerEvent: {}
+[30.812168] (-) TimerEvent: {}
+[30.912985] (-) TimerEvent: {}
+[31.013809] (-) TimerEvent: {}
+[31.114498] (-) TimerEvent: {}
+[31.215276] (-) TimerEvent: {}
+[31.315879] (-) TimerEvent: {}
+[31.416996] (-) TimerEvent: {}
+[31.517682] (-) TimerEvent: {}
+[31.618272] (-) TimerEvent: {}
+[31.718862] (-) TimerEvent: {}
+[31.819427] (-) TimerEvent: {}
+[31.920187] (-) TimerEvent: {}
+[32.021042] (-) TimerEvent: {}
+[32.121683] (-) TimerEvent: {}
+[32.222545] (-) TimerEvent: {}
+[32.323468] (-) TimerEvent: {}
+[32.424149] (-) TimerEvent: {}
+[32.525194] (-) TimerEvent: {}
+[32.625859] (-) TimerEvent: {}
+[32.726479] (-) TimerEvent: {}
+[32.827256] (-) TimerEvent: {}
+[32.927873] (-) TimerEvent: {}
+[33.028534] (-) TimerEvent: {}
+[33.129313] (-) TimerEvent: {}
+[33.229907] (-) TimerEvent: {}
+[33.330459] (-) TimerEvent: {}
+[33.431136] (-) TimerEvent: {}
+[33.531760] (-) TimerEvent: {}
+[33.632540] (-) TimerEvent: {}
+[33.733251] (-) TimerEvent: {}
+[33.833851] (-) TimerEvent: {}
+[33.934372] (-) TimerEvent: {}
+[34.034921] (-) TimerEvent: {}
+[34.135452] (-) TimerEvent: {}
+[34.236174] (-) TimerEvent: {}
+[34.336935] (-) TimerEvent: {}
+[34.437925] (-) TimerEvent: {}
+[34.538632] (-) TimerEvent: {}
+[34.639551] (-) TimerEvent: {}
+[34.740678] (-) TimerEvent: {}
+[34.841297] (-) TimerEvent: {}
+[34.942150] (-) TimerEvent: {}
+[35.043181] (-) TimerEvent: {}
+[35.143776] (-) TimerEvent: {}
+[35.244554] (-) TimerEvent: {}
+[35.345575] (-) TimerEvent: {}
+[35.446180] (-) TimerEvent: {}
+[35.546725] (-) TimerEvent: {}
+[35.647772] (-) TimerEvent: {}
+[35.748847] (-) TimerEvent: {}
+[35.849563] (-) TimerEvent: {}
+[35.950396] (-) TimerEvent: {}
+[36.051223] (-) TimerEvent: {}
+[36.152117] (-) TimerEvent: {}
+[36.252763] (-) TimerEvent: {}
+[36.353444] (-) TimerEvent: {}
+[36.454144] (-) TimerEvent: {}
+[36.554883] (-) TimerEvent: {}
+[36.655778] (-) TimerEvent: {}
+[36.718059] (moveit_commander_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/moveit_planning_exe.dir/build.make:76: CMakeFiles/moveit_planning_exe.dir/src/moveit_plan_publisher.cpp.o] Error 1\n'}
+[36.718963] (moveit_commander_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/moveit_planning_exe.dir/all] Error 2\n'}
+[36.719739] (moveit_commander_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[36.727962] (moveit_commander_cpp) CommandEnded: {'returncode': 2}
+[36.755944] (moveit_commander_cpp) JobEnded: {'identifier': 'moveit_commander_cpp', 'rc': 2}
+[36.760715] (-) TimerEvent: {}
+[36.760965] (-) EventReactorShutdown: {}

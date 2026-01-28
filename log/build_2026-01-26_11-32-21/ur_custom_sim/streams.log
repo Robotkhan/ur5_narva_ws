@@ -1,0 +1,62 @@
+[0.098s] Invoking command in '/home/kanat/ur5_new_ws/build/ur_custom_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/ur_custom_sim -- -j20 -l20
+[0.168s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.572s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.582s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[0.583s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.637s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.652s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.676s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.733s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.868s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.874s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.037s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.175s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.199s] -- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[1.263s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.549s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.549s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.551s] -- Added test 'lint_cmake' to check CMake code style
+[1.552s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.555s] -- Added test 'xmllint' to check XML markup files
+[1.558s] -- Configuring done (1.4s)
+[1.565s] -- Generating done (0.0s)
+[1.569s] -- Build files have been written to: /home/kanat/ur5_new_ws/build/ur_custom_sim
+[1.619s] Invoked command in '/home/kanat/ur5_new_ws/build/ur_custom_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/ur_custom_sim -- -j20 -l20
+[1.621s] Invoking command in '/home/kanat/ur5_new_ws/build/ur_custom_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kanat/ur5_new_ws/build/ur_custom_sim
+[1.635s] -- Install configuration: ""
+[1.636s] -- Execute custom install script
+[1.637s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/launch/spawn_ur5_camera.launch.py
+[1.637s] -- Symlinking: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/launch/spawn_ur5_camera_gripper.launch.py
+[1.652s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/launch/spawn_ur5_camera_moveit.launch.py
+[1.653s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/launch/view_ur5_camera.launch.py
+[1.653s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/launch/view_ur5_camera_gripper.launch.py
+[1.653s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/2f_85.ros2_control.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/camera.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/robotiq_2f_85_macro.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/ur5.ros2_control.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/ur5_camera.urdf.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/ur5_camera_gripper.urdf.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/urdf/ur5_macro.xacro
+[1.654s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/meshes/sensors/camera/kinetic.dae
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/meshes/sensors/camera/kinetic.png
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/meshes/sensors/camera/kinetic.stl
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/config/initial_positions.yaml
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/config/ur5_controllers.yaml
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/config/ur5_controllers_gripper.yaml
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/rviz/view_rviz.rviz
+[1.655s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ament_index/resource_index/package_run_dependencies/ur_custom_sim
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ament_index/resource_index/parent_prefix_path/ur_custom_sim
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/environment/ament_prefix_path.sh
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/environment/ament_prefix_path.dsv
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/environment/path.sh
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/environment/path.dsv
+[1.656s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/local_setup.bash
+[1.657s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/local_setup.sh
+[1.657s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/local_setup.zsh
+[1.657s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/local_setup.dsv
+[1.657s] -- Symlinking: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/package.dsv
+[1.674s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ament_index/resource_index/packages/ur_custom_sim
+[1.675s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/cmake/ur_custom_simConfig.cmake
+[1.675s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/cmake/ur_custom_simConfig-version.cmake
+[1.675s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/package.xml
+[1.677s] Invoked command in '/home/kanat/ur5_new_ws/build/ur_custom_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kanat/ur5_new_ws/build/ur_custom_sim

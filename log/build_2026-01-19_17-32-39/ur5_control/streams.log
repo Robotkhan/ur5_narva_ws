@@ -1,0 +1,20 @@
+[3.609s] Invoking command in '/home/kanat/ur5_new_ws/build/ur5_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/kanat/ur5_new_ws/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kanat/ur5_new_ws/build/ur5_control/build --no-deps symlink_data --force
+[5.069s] running develop
+[6.129s] running egg_info
+[6.236s] writing ur5_control.egg-info/PKG-INFO
+[6.238s] writing dependency_links to ur5_control.egg-info/dependency_links.txt
+[6.239s] writing entry points to ur5_control.egg-info/entry_points.txt
+[6.239s] writing requirements to ur5_control.egg-info/requires.txt
+[6.240s] writing top-level names to ur5_control.egg-info/top_level.txt
+[6.462s] reading manifest file 'ur5_control.egg-info/SOURCES.txt'
+[6.466s] writing manifest file 'ur5_control.egg-info/SOURCES.txt'
+[6.574s] running build_ext
+[6.574s] Creating /home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages/ur5-control.egg-link (link to .)
+[6.577s] Installing mpc_control_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[6.578s] Installing pd_control_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[6.579s] 
+[6.580s] Installed /home/kanat/ur5_new_ws/build/ur5_control
+[6.580s] running symlink_data
+[6.581s] symbolically linking /home/kanat/ur5_new_ws/build/ur5_control/resource/ur5_control -> /home/kanat/ur5_new_ws/install/ur5_control/share/ament_index/resource_index/packages
+[6.582s] symbolically linking /home/kanat/ur5_new_ws/build/ur5_control/package.xml -> /home/kanat/ur5_new_ws/install/ur5_control/share/ur5_control
+[6.707s] Invoked command in '/home/kanat/ur5_new_ws/build/ur5_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/kanat/ur5_new_ws/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kanat/ur5_new_ws/build/ur5_control/build --no-deps symlink_data --force

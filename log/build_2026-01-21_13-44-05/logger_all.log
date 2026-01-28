@@ -1,0 +1,201 @@
+[0.534s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'moveit_commander_cpp', '--symlink-install']
+[0.535s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['moveit_commander_cpp'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f1ae3a8b500>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1ae39abdd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1ae39abdd0>>, mixin_verb=('build',))
+[0.686s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.688s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kanat/ur5_new_ws'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['ignore', 'ignore_ament_install']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ignore'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ignore_ament_install'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['colcon_pkg']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['colcon_meta']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'colcon_meta'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['ros']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ros'
+[0.805s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Universal_Robots_ROS2_Description' with type 'ros.ament_cmake' and name 'ur_description'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'ignore'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'ignore_ament_install'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['colcon_pkg']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'colcon_pkg'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['colcon_meta']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'colcon_meta'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['ros']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'ros'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['cmake', 'python']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'cmake'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'python'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extensions ['python_setup_py']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation) by extension 'python_setup_py'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extension 'ignore'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extension 'ignore_ament_install'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extensions ['colcon_pkg']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extension 'colcon_pkg'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extensions ['colcon_meta']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extension 'colcon_meta'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extensions ['ros']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz) by extension 'ros'
+[0.815s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz' with type 'ros.ament_cmake' and name 'ur_simulation_gz'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extension 'ignore'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extension 'ignore_ament_install'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extensions ['colcon_pkg']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extensions ['colcon_meta']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extension 'colcon_meta'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extensions ['ros']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_commander_cpp) by extension 'ros'
+[0.821s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_commander_cpp' with type 'ros.ament_cmake' and name 'moveit_commander_cpp'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extension 'ignore'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extension 'ignore_ament_install'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extensions ['colcon_pkg']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extension 'colcon_pkg'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extensions ['colcon_meta']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extension 'colcon_meta'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extensions ['ros']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_bringup) by extension 'ros'
+[0.824s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_bringup' with type 'ros.ament_cmake' and name 'ur5_bringup'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extensions ['ignore', 'ignore_ament_install']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extension 'ignore'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extension 'ignore_ament_install'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extensions ['colcon_pkg']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extension 'colcon_pkg'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extensions ['colcon_meta']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extension 'colcon_meta'
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extensions ['ros']
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_control) by extension 'ros'
+[0.828s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_control' with type 'ros.ament_python' and name 'ur5_control'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ignore'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ignore_ament_install'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['colcon_pkg']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'colcon_pkg'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['colcon_meta']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'colcon_meta'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extensions ['ros']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_moveit_config) by extension 'ros'
+[0.831s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_moveit_config' with type 'ros.ament_cmake' and name 'ur5_moveit_config'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extension 'ignore'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extension 'ignore_ament_install'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extensions ['colcon_pkg']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extension 'colcon_pkg'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extensions ['colcon_meta']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extension 'colcon_meta'
+[0.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extensions ['ros']
+[0.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_custom_sim) by extension 'ros'
+[0.838s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_custom_sim' with type 'ros.ament_cmake' and name 'ur_custom_sim'
+[0.838s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur5_bringup' in 'src/ur5_bringup'
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur5_control' in 'src/ur5_control'
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur_custom_sim' in 'src/ur_custom_sim'
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur_description' in 'src/Universal_Robots_ROS2_Description'
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur5_moveit_config' in 'src/ur5_moveit_config'
+[0.914s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur_simulation_gz' in 'src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz'
+[0.916s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.916s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.928s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/kanat/ur5_new_ws/install
+[0.930s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/kanat/ros2_udemy_beginner/install
+[0.932s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/kanat/turtlebot3_ws/install
+[0.934s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/kanat/custom_manipulator_ws/install
+[0.945s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 600 installed packages in /opt/ros/jazzy
+[0.951s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_args' from command line to 'None'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_target' from command line to 'None'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'moveit_commander_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.339s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_commander_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kanat/ur5_new_ws/build/moveit_commander_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kanat/ur5_new_ws/install/moveit_commander_cpp', 'merge_install': False, 'path': '/home/kanat/ur5_new_ws/src/moveit_commander_cpp', 'symlink_install': True, 'test_result_base': None}
+[1.340s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.344s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kanat/ur5_new_ws/src/moveit_commander_cpp' with build type 'ament_cmake'
+[1.345s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kanat/ur5_new_ws/src/moveit_commander_cpp'
+[1.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/cmake /home/kanat/ur5_new_ws/src/moveit_commander_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/moveit_commander_cpp
+[11.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/cmake /home/kanat/ur5_new_ws/src/moveit_commander_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/moveit_commander_cpp
+[11.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/moveit_commander_cpp -- -j20 -l20
+[38.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/moveit_commander_cpp -- -j20 -l20
+[38.074s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_commander_cpp)
+[38.081s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp' for CMake module files
+[38.082s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp' for CMake config files
+[38.083s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/bin'
+[38.083s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/lib/pkgconfig/moveit_commander_cpp.pc'
+[38.085s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/lib/python3.12/site-packages'
+[38.087s] Level 1:colcon.colcon_core.environment:checking '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/bin'
+[38.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.ps1'
+[38.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.dsv'
+[38.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.sh'
+[38.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.bash'
+[38.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.zsh'
+[38.098s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/colcon-core/packages/moveit_commander_cpp)
+[38.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[38.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[38.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[38.103s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[38.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[38.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[38.128s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[38.208s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[38.209s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kanat/ur5_new_ws/install/local_setup.ps1'
+[38.213s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kanat/ur5_new_ws/install/_local_setup_util_ps1.py'
+[38.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kanat/ur5_new_ws/install/setup.ps1'
+[38.225s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kanat/ur5_new_ws/install/local_setup.sh'
+[38.227s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kanat/ur5_new_ws/install/_local_setup_util_sh.py'
+[38.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kanat/ur5_new_ws/install/setup.sh'
+[38.238s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kanat/ur5_new_ws/install/local_setup.bash'
+[38.240s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kanat/ur5_new_ws/install/setup.bash'
+[38.246s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kanat/ur5_new_ws/install/local_setup.zsh'
+[38.248s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kanat/ur5_new_ws/install/setup.zsh'

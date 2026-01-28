@@ -1,0 +1,1035 @@
+<sdf version='1.10'>
+  <world name='empty'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics">
+      <engine>
+        <filename>gz-physics7-bullet-featherstone-plugin</filename>
+      </engine>
+      <!-- tested engine plugins: gz-physics7-bullet-plugin, gz-physics7-bullet-featherstone-plugin, gz-physics7-tpe-plugin, gz-physics7-dartsim-plugin-->
+    </plugin>
+    
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='ur'>
+      <joint name='base_joint' type='fixed'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>world</parent>
+        <child>base_link</child>
+      </joint>
+      <link name='base_link'>
+        <pose>0 0 0.80000000000000004 0 0 0</pose>
+        <inertial>
+          <pose>0.025890518046306609 -1.561959380998649e-06 0.062965706566817561 0 0 0</pose>
+          <mass>4.2196999999999996</mass>
+          <inertia>
+            <ixx>0.30903043271202102</ixx>
+            <ixy>3.106862165556793e-06</ixy>
+            <ixz>-0.12524385326792539</ixz>
+            <iyy>0.36052455104013342</iyy>
+            <iyz>7.5558847880181064e-06</iyz>
+            <izz>0.058702604292982678</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_inertia_collision'>
+          <pose>0 0 0 0 0 -2.4492935982947059e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='base_link_fixed_joint_lump__camera_link_collision_1'>
+          <pose>0.5 0 1.2 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/meshes/sensors/camera/kinetic.dae</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='base_link_inertia_visual'>
+          <pose>0 0 0 0 0 -2.4492935982947059e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
+          <pose>0.5 0 1.2 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/meshes/sensors/camera/kinetic.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 0 0 1</diffuse>
+            <ambient>1 0 0 1</ambient>
+          </material>
+        </visual>
+        <sensor name='camera' type='camera'>
+          <pose>0.5 0 1.2 3.1415926535897931 1.5707926536359933 3.1415926535897931</pose>
+          <topic>camera/image_raw</topic>
+          <update_rate>30</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <camera name='intel_realsense_r200'>
+            <pose>0 0 0 0 0 0</pose>
+            <horizontal_fov>1.0469999999999999</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+              <format>RGB_INT8</format>
+              <anti_aliasing>4</anti_aliasing>
+            </image>
+            <camera_info_topic>camera/camera_info</camera_info_topic>
+            <trigger_topic></trigger_topic>
+            <triggered>false</triggered>
+            <clip>
+              <near>0.10000000000000001</near>
+              <far>100</far>
+            </clip>
+            <save enabled='false'>
+              <path>__default__</path>
+            </save>
+            <visibility_mask>4294967295</visibility_mask>
+            <noise>
+              <type>none</type>
+              <mean>0</mean>
+              <stddev>0</stddev>
+            </noise>
+            <distortion>
+              <k1>0</k1>
+              <k2>0</k2>
+              <k3>0</k3>
+              <p1>0</p1>
+              <p2>0</p2>
+              <center>0.5 0.5</center>
+            </distortion>
+            <lens>
+              <type>stereographic</type>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707963267948966</cutoff_angle>
+              <env_texture_size>256</env_texture_size>
+            </lens>
+            <optical_frame_id></optical_frame_id>
+          </camera>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='shoulder_pan_joint' type='revolute'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>shoulder_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.2831853071795862</lower>
+            <upper>6.2831853071795862</upper>
+            <effort>150</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='shoulder_link'>
+        <pose>0 0 0.88915900000000003 0 0 3.1415926533972667</pose>
+        <inertial>
+          <pose>0 -0.0019300000000000001 -0.025610000000000001 0 0 0</pose>
+          <mass>3.7000000000000002</mass>
+          <inertia>
+            <ixx>0.01497235833333333</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.01497235833333333</iyy>
+            <iyz>0</iyz>
+            <izz>0.010406250000000001</izz>
+          </inertia>
+        </inertial>
+        <collision name='shoulder_link_collision'>
+          <pose>0 0 0 0 0 3.1415926535897931</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='shoulder_link_visual'>
+          <pose>0 0 0 0 0 3.1415926535897931</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='shoulder_lift_joint' type='revolute'>
+        <pose>0 1.1102230246251565e-16 -5.5511151231257827e-17 0 0 0</pose>
+        <parent>shoulder_link</parent>
+        <child>upper_arm_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.2831853071795862</lower>
+            <upper>6.2831853071795862</upper>
+            <effort>150</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='upper_arm_link'>
+        <pose>1.1102226726007342e-16 -2.4471177616672034e-26 0.88915900000000014 1.5707965843544285 1.5699999909007822 -3.1415923962228653</pose>
+        <inertial>
+          <pose>-0.21249999999999999 0 0.11336 0 1.5707963267948966 0</pose>
+          <mass>8.3930000000000007</mass>
+          <inertia>
+            <ixx>0.13388583541666671</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.13388583541666671</iyy>
+            <iyz>0</iyz>
+            <izz>0.0151074</izz>
+          </inertia>
+        </inertial>
+        <collision name='upper_arm_link_collision'>
+          <pose>0 0 0.13585 1.5707963267948959 5.5511151231257827e-17 -1.5707963267948959</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='upper_arm_link_visual'>
+          <pose>0 0 0 1.5707963267948959 5.5511151231257827e-17 -1.5707963267948959</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='elbow_joint' type='revolute'>
+        <pose>-5.5511151231257827e-17 2.2204460492503131e-16 -5.5511151231257827e-17 0 0 0</pose>
+        <parent>upper_arm_link</parent>
+        <child>forearm_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3.1415926535897931</lower>
+            <upper>3.1415926535897931</upper>
+            <effort>150</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='forearm_link'>
+        <pose>0.00033844271443348947 8.710399095807126e-11 1.3141588652429539 1.570796327 -2.8658816280532462e-05 3.1415926533975251</pose>
+        <inertial>
+          <pose>-0.24224999999999999 0 0.026499999999999999 0 1.5707963267948966 0</pose>
+          <mass>2.3300000000000001</mass>
+          <inertia>
+            <ixx>0.031216803515624999</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.031216803515624999</iyy>
+            <iyz>0</iyz>
+            <izz>0.0040949999999999997</izz>
+          </inertia>
+        </inertial>
+        <collision name='forearm_link_collision'>
+          <pose>0 0 0.016500000000000001 1.5707963267948959 5.5511151231257827e-17 -1.5707963267948959</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='forearm_link_visual'>
+          <pose>0 0 0.016500000000000001 1.5707963267948959 5.5511151231257827e-17 -1.5707963267948959</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='wrist_1_joint' type='revolute'>
+        <pose>0 -1.1102230246251565e-16 2.2204460492503131e-16 0 0 0</pose>
+        <parent>forearm_link</parent>
+        <child>wrist_1_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.2831853071795862</lower>
+            <upper>6.2831853071795862</upper>
+            <effort>28</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wrist_1_link'>
+        <pose>0.39258844257536396 0.10915000001166815 1.31414762056672 1.5707965886155368 1.5700129526864497 -3.1415923919615421</pose>
+        <inertial>
+          <pose>0 -0.01634 -0.0018 0 0 0</pose>
+          <mass>1.2190000000000001</mass>
+          <inertia>
+            <ixx>0.0020138895833333331</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0020138895833333331</iyy>
+            <iyz>0</iyz>
+            <izz>0.0021941999999999999</izz>
+          </inertia>
+        </inertial>
+        <collision name='wrist_1_link_collision'>
+          <pose>0 0 -0.092999999999999999 1.5707963267948959 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='wrist_1_link_visual'>
+          <pose>0 0 -0.092999999999999999 1.5707963267948959 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='wrist_2_joint' type='revolute'>
+        <pose>0 2.7755575615628914e-17 0 0 0 -5.1517785475977202e-36</pose>
+        <parent>wrist_1_link</parent>
+        <child>wrist_2_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.2831853071795862</lower>
+            <upper>6.2831853071795862</upper>
+            <effort>28</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wrist_2_link'>
+        <pose>0.48723841353708958 0.10914999997396091 1.314073465588349 3.1392574180975981 1.5700129617037841 3.1392574169833476</pose>
+        <inertial>
+          <pose>0 0.01634 -0.0018 0 0 0</pose>
+          <mass>1.2190000000000001</mass>
+          <inertia>
+            <ixx>0.001831039583333333</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001831039583333333</iyy>
+            <iyz>0</iyz>
+            <izz>0.0021941999999999999</izz>
+          </inertia>
+        </inertial>
+        <collision name='wrist_2_link_collision'>
+          <pose>0 0 -0.095000000000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='wrist_2_link_visual'>
+          <pose>0 0 -0.095000000000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='wrist_3_joint' type='revolute'>
+        <pose>0 0 0 0 0 1.2325951644078309e-32</pose>
+        <parent>wrist_2_link</parent>
+        <child>wrist_3_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.2831853071795862</lower>
+            <upper>6.2831853071795862</upper>
+            <effort>28</effort>
+            <velocity>3.1415926535897931</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wrist_3_link'>
+        <pose>0.48723841367156817 0.19144999997379442 1.3140736131758144 1.5684984036233518 1.5699999942483174 3.1392947295206097</pose>
+        <inertial>
+          <pose>-7.1398801518109261e-18 1.7719630936590081e-05 0.02493099809423964 0 0 0</pose>
+          <mass>0.85110196999999999</mass>
+          <inertia>
+            <ixx>0.00076094157068166144</ixx>
+            <ixy>2.935999999997977e-08</ixy>
+            <ixz>7.9436130958681646e-20</ixz>
+            <iyy>0.00083278541496840724</iyy>
+            <iyz>-4.3443854399705749e-07</iyz>
+            <izz>0.00052674502321325425</izz>
+          </inertia>
+        </inertial>
+        <collision name='wrist_3_link_collision'>
+          <pose>0 0 -0.081799999999999998 1.5707963267948959 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='wrist_3_link_fixed_joint_lump__robotiq_85_base_link_collision_1'>
+          <pose>0 0 0 -2.4651903288156619e-32 -2.2204460492503131e-16 2.2204460492503131e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/robotiq_base.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='wrist_3_link_visual'>
+          <pose>0 0 -0.081799999999999998 1.5707963267948959 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///home/kanat/ur5_new_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='wrist_3_link_fixed_joint_lump__robotiq_85_base_link_visual_1'>
+          <pose>0 0 0 -2.4651903288156619e-32 -2.2204460492503131e-16 2.2204460492503131e-16</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/robotiq_base.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_left_inner_knuckle_joint' type='revolute'>
+        <pose>2.2204460492503131e-16 0 0 0 0 1.2325951644078309e-32</pose>
+        <parent>wrist_3_link</parent>
+        <child>robotiq_85_left_inner_knuckle_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+          <mimic joint='robotiq_85_left_knuckle_joint' axis='axis'>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
+            <reference>0</reference>
+          </mimic>
+        </axis>
+      </joint>
+      <link name='robotiq_85_left_inner_knuckle_link'>
+        <pose>0.48722830037605275 0.25287002321332724 1.3013737295852914 1.8610319184269217 1.5699652372102355 -2.8513569674273431</pose>
+        <inertial>
+          <pose>0.018976989999999999 0.00015001000000000001 0.02247101 0 0 0</pose>
+          <mass>0.029693764479999999</mass>
+          <inertia>
+            <ixx>9.5713600000000001e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>-3.9342399999999998e-06</ixz>
+            <iyy>8.69056e-06</iyy>
+            <iyz>0</iyz>
+            <izz>8.1914400000000003e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_left_inner_knuckle_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_left_inner_knuckle_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_left_knuckle_joint' type='revolute'>
+        <pose>0 0 -5.5511151231257827e-17 0 0 1.2325951644078309e-32</pose>
+        <parent>wrist_3_link</parent>
+        <child>robotiq_85_left_knuckle_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0.80000000000000004</upper>
+            <effort>50</effort>
+            <velocity>0.5</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robotiq_85_left_knuckle_link'>
+        <pose>0.48721404514343458 0.24635457597048913 1.2834725833385352 1.5684984261333139 1.5699999942062135 3.1392947520306409</pose>
+        <inertial>
+          <pose>0.029386739357586979 -0.000550523351652724 0.01110696109436298 0 0 0</pose>
+          <mass>0.056451499600000003</mass>
+          <inertia>
+            <ixx>1.672951427632284e-05</ixx>
+            <ixy>2.376180881559496e-07</ixy>
+            <ixz>-5.7573775998137648e-06</ixz>
+            <iyy>2.2123373744517121e-05</iyy>
+            <iyz>1.6103204181075421e-07</iyz>
+            <izz>1.2901330613689229e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_left_knuckle_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/left_knuckle.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='robotiq_85_left_knuckle_link_fixed_joint_lump__robotiq_85_left_finger_link_collision_1'>
+          <pose>0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/left_finger.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_left_knuckle_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/left_knuckle.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='robotiq_85_left_knuckle_link_fixed_joint_lump__robotiq_85_left_finger_link_visual_1'>
+          <pose>0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/left_finger.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_left_finger_tip_joint' type='revolute'>
+        <pose>-1.1102230246251565e-16 0 0 0 0 1.2325951644078309e-32</pose>
+        <parent>robotiq_85_left_knuckle_link</parent>
+        <child>robotiq_85_left_finger_tip_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+          <mimic joint='robotiq_85_left_knuckle_joint' axis='axis'>
+            <multiplier>-1</multiplier>
+            <offset>0</offset>
+            <reference>0</reference>
+          </mimic>
+        </axis>
+      </joint>
+      <link name='robotiq_85_left_finger_tip_link'>
+        <pose>0.48718445556713302 0.28977632396464892 1.2463151745772305 0.0013638544607722373 -0.94729355050960573 1.5696890971981299</pose>
+        <inertial>
+          <pose>-0.01456706 -0.00080000000000000004 0.016497009999999999 0 0 0</pose>
+          <mass>0.04268588744</mass>
+          <inertia>
+            <ixx>1.0481519999999999e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>3.5232e-06</ixz>
+            <iyy>1.197888e-05</iyy>
+            <iyz>0</iyz>
+            <izz>4.2278399999999998e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_left_finger_tip_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/left_finger_tip.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_left_finger_tip_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/left_finger_tip.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_right_inner_knuckle_joint' type='revolute'>
+        <pose>2.2204460492503131e-16 0 0 0 0 1.2325951644078309e-32</pose>
+        <parent>wrist_3_link</parent>
+        <child>robotiq_85_right_inner_knuckle_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+          <mimic joint='robotiq_85_left_knuckle_joint' axis='axis'>
+            <multiplier>-1</multiplier>
+            <offset>0</offset>
+            <reference>0</reference>
+          </mimic>
+        </axis>
+      </joint>
+      <link name='robotiq_85_right_inner_knuckle_link'>
+        <pose>0.48724852716826811 0.25286997673405903 1.3267737215316426 3.1407935466359378 -0.083384363866372851 -1.5707297711139667</pose>
+        <inertial>
+          <pose>-0.019268239999999999 5.0009999999999997e-05 0.02222178 0 0 0</pose>
+          <mass>0.029693764479999999</mass>
+          <inertia>
+            <ixx>9.4245600000000001e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>3.9635999999999996e-06</ixz>
+            <iyy>8.69056e-06</iyy>
+            <iyz>0</iyz>
+            <izz>8.3382400000000003e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_right_inner_knuckle_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_right_inner_knuckle_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_right_knuckle_joint' type='revolute'>
+        <pose>0 0 -5.5511151231257827e-17 0 0 1.2325951644078309e-32</pose>
+        <parent>wrist_3_link</parent>
+        <child>robotiq_85_right_knuckle_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>-0.80000000000000004</lower>
+            <upper>0</upper>
+            <effort>50</effort>
+            <velocity>0.5</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+          <mimic joint='robotiq_85_left_knuckle_joint' axis='axis'>
+            <multiplier>-1</multiplier>
+            <offset>0</offset>
+            <reference>0</reference>
+          </mimic>
+        </axis>
+      </joint>
+      <link name='robotiq_85_right_knuckle_link'>
+        <pose>0.48726278237971571 0.24635446397692778 1.3446748439329637 3.1404825609126887 0.77079784874058932 -1.5715697373554511</pose>
+        <inertial>
+          <pose>-0.029386739357586979 4.4887161538121481e-05 0.01110696109436298 0 0 0</pose>
+          <mass>0.056451499600000003</mass>
+          <inertia>
+            <ixx>1.67196201740057e-05</ixx>
+            <ixy>-4.9109219643319929e-08</ixy>
+            <ixz>5.7573775998137648e-06</ixz>
+            <iyy>2.2123373744517121e-05</iyy>
+            <iyz>3.3280959258061408e-08</iyz>
+            <izz>1.289143651137209e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_right_knuckle_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/right_knuckle.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='robotiq_85_right_knuckle_link_fixed_joint_lump__robotiq_85_right_finger_link_collision_1'>
+          <pose>-0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/right_finger.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_right_knuckle_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/right_knuckle.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='robotiq_85_right_knuckle_link_fixed_joint_lump__robotiq_85_right_finger_link_visual_1'>
+          <pose>-0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/right_finger.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='robotiq_85_right_finger_tip_joint' type='revolute'>
+        <pose>0 -1.1102230246251565e-16 0 0 0 1.2325951644078309e-32</pose>
+        <parent>robotiq_85_right_knuckle_link</parent>
+        <child>robotiq_85_right_finger_tip_link</child>
+        <axis>
+          <xyz>1.2325951644078309e-32 -1 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+          <mimic joint='robotiq_85_left_knuckle_joint' axis='axis'>
+            <multiplier>1</multiplier>
+            <offset>0</offset>
+            <reference>0</reference>
+          </mimic>
+        </axis>
+      </joint>
+      <link name='robotiq_85_right_finger_tip_link'>
+        <pose>0.48725859303605712 0.30326180833846739 1.3394140226628739 3.1407555587061671 0.31336211411201165 -1.5710543688495409</pose>
+        <inertial>
+          <pose>0.01456706 5.0000000000000002e-05 0.016497009999999999 0 0 0</pose>
+          <mass>0.04268588744</mass>
+          <inertia>
+            <ixx>1.0481519999999999e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>-3.5232e-06</ixz>
+            <iyy>1.197888e-05</iyy>
+            <iyz>0</iyz>
+            <izz>4.2278399999999998e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='robotiq_85_right_finger_tip_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/collision/2f_85/right_finger_tip.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='robotiq_85_right_finger_tip_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file://robotiq_description/meshes/visual/2f_85/right_finger_tip.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <plugin name='gz_ros2_control::GazeboSimROS2ControlPlugin' filename='gz_ros2_control-system'>
+        <parameters>/home/kanat/ur5_new_ws/install/ur_custom_sim/share/ur_custom_sim/config/ur5_controllers.yaml</parameters>
+        <ros>
+          <namespace/>
+        </ros>
+      </plugin>
+      <frame name='base_link-base_fixed_joint' attached_to='base_link'>
+        <pose>0 0 0 0 0 3.1415926535897931</pose>
+      </frame>
+      <frame name='base' attached_to='base_link-base_fixed_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='base_link-base_link_inertia' attached_to='base_link'>
+        <pose>0 0 0 0 0 3.1415926535897931</pose>
+      </frame>
+      <frame name='base_link_inertia' attached_to='base_link-base_link_inertia'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_base_joint' attached_to='tool0'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_base_link' attached_to='robotiq_85_base_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_left_finger_joint' attached_to='robotiq_85_left_knuckle_link'>
+        <pose>0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_left_finger_link' attached_to='robotiq_85_left_finger_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_right_finger_joint' attached_to='robotiq_85_right_knuckle_link'>
+        <pose>-0.031526159999999998 0 -0.0037634700000000001 0 0 0</pose>
+      </frame>
+      <frame name='robotiq_85_right_finger_link' attached_to='robotiq_85_right_finger_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='flange-tool0' attached_to='flange'>
+        <pose>0 0 0 1.5707963267948959 -5.5511151231257827e-17 1.5707963267948959</pose>
+      </frame>
+      <frame name='tool0' attached_to='flange-tool0'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='wrist_3-flange' attached_to='wrist_3_link'>
+        <pose>0 0 0 -1.5707963267948957 -1.5707963267948966 0</pose>
+      </frame>
+      <frame name='flange' attached_to='wrist_3-flange'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='wrist_3_link-ft_frame' attached_to='wrist_3_link'>
+        <pose>0 0 0 3.1415926535897931 0 0</pose>
+      </frame>
+      <frame name='ft_frame' attached_to='wrist_3_link-ft_frame'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_optical_joint' attached_to='camera_link'>
+        <pose>0 0 0 -1.5700000000000001 -5.5511151231257827e-17 -1.5700000000000001</pose>
+      </frame>
+      <frame name='camera_optical_link' attached_to='camera_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_joint' attached_to='base_link'>
+        <pose>0.5 0 1.2 0 1.5700000000005452 0</pose>
+      </frame>
+      <frame name='camera_link' attached_to='camera_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <pose>0 0 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

@@ -1,0 +1,5 @@
+[console_scripts]
+mpc_constrained_control_exe = ur5_control.mpc_constrained_ur5:main
+mpc_control_exe = ur5_control.mpc_ur5:main
+pd_control_exe = ur5_control.pd_ur5:main
+waypoint_publisher_exe = ur5_control.waypoint_publisher:main

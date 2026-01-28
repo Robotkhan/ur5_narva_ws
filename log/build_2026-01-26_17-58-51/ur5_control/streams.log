@@ -1,0 +1,31 @@
+[1.414s] Invoking command in '/home/kanat/ur5_new_ws/src/ur5_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kanat/ur5_new_ws/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur5_control build --build-base /home/kanat/ur5_new_ws/build/ur5_control/build install --record /home/kanat/ur5_new_ws/build/ur5_control/install.log --single-version-externally-managed install_data
+[1.812s] running egg_info
+[1.839s] writing ../../build/ur5_control/ur5_control.egg-info/PKG-INFO
+[1.840s] writing dependency_links to ../../build/ur5_control/ur5_control.egg-info/dependency_links.txt
+[1.840s] writing entry points to ../../build/ur5_control/ur5_control.egg-info/entry_points.txt
+[1.840s] writing requirements to ../../build/ur5_control/ur5_control.egg-info/requires.txt
+[1.840s] writing top-level names to ../../build/ur5_control/ur5_control.egg-info/top_level.txt
+[1.904s] reading manifest file '../../build/ur5_control/ur5_control.egg-info/SOURCES.txt'
+[1.905s] writing manifest file '../../build/ur5_control/ur5_control.egg-info/SOURCES.txt'
+[1.905s] running build
+[1.905s] running build_py
+[1.906s] copying ur5_control/mpc_ur5.py -> /home/kanat/ur5_new_ws/build/ur5_control/build/lib/ur5_control
+[1.906s] copying ur5_control/__init__.py -> /home/kanat/ur5_new_ws/build/ur5_control/build/lib/ur5_control
+[1.906s] copying ur5_control/mpc_constrained_ur5.py -> /home/kanat/ur5_new_ws/build/ur5_control/build/lib/ur5_control
+[1.906s] copying ur5_control/waypoint_publisher.py -> /home/kanat/ur5_new_ws/build/ur5_control/build/lib/ur5_control
+[1.906s] copying ur5_control/pd_ur5.py -> /home/kanat/ur5_new_ws/build/ur5_control/build/lib/ur5_control
+[1.907s] running install
+[1.915s] running install_lib
+[1.946s] running install_data
+[1.946s] copying resource/ur5_control -> /home/kanat/ur5_new_ws/install/ur5_control/share/ament_index/resource_index/packages
+[1.946s] copying package.xml -> /home/kanat/ur5_new_ws/install/ur5_control/share/ur5_control
+[1.946s] running install_egg_info
+[1.978s] removing '/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages/ur5_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.978s] Copying ../../build/ur5_control/ur5_control.egg-info to /home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages/ur5_control-0.0.0-py3.12.egg-info
+[1.979s] running install_scripts
+[2.148s] Installing mpc_constrained_control_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[2.148s] Installing mpc_control_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[2.148s] Installing pd_control_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[2.148s] Installing waypoint_publisher_exe script to /home/kanat/ur5_new_ws/install/ur5_control/lib/ur5_control
+[2.148s] writing list of installed files to '/home/kanat/ur5_new_ws/build/ur5_control/install.log'
+[2.179s] Invoked command in '/home/kanat/ur5_new_ws/src/ur5_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kanat/ur5_new_ws/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kanat/ur5_new_ws/install/ur5_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur5_control build --build-base /home/kanat/ur5_new_ws/build/ur5_control/build install --record /home/kanat/ur5_new_ws/build/ur5_control/install.log --single-version-externally-managed install_data

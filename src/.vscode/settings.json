@@ -1,0 +1,19 @@
+{
+    "python.analysis.extraPaths": [
+        "/home/kanat/ur5_ws/install/ur_robot_driver/lib/python3.12/site-packages",
+        "/home/kanat/ur5_ws/install/ur_dashboard_msgs/lib/python3.12/site-packages",
+        "/home/kanat/ur5_ws/install/ur5_sim_kanat/lib/python3.12/site-packages",
+        "/home/kanat/ur5_ws/install/ur5_kanat/lib/python3.12/site-packages",
+        "/home/kanat/turtlebot3_ws/build/turtlebot3_control",
+        "/home/kanat/turtlebot3_ws/install/turtlebot3_control/lib/python3.12/site-packages",
+        "/home/kanat/custom_manipulator_ws/install/custom_interfaces/lib/python3.12/site-packages",
+        "/home/kanat/ros2_udemy_beginner/build/my_ros_services_py",
+        "/home/kanat/ros2_udemy_beginner/install/my_ros_services_py/lib/python3.12/site-packages",
+        "/home/kanat/ros2_udemy_beginner/install/my_pkg_py/lib/python3.12/site-packages",
+        "/home/kanat/ros2_udemy_beginner/install/my_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages",
+        "/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64",
+        "/media/kanat/Kanat/carla_ws/CARLA_Latest/PythonAPI/carla/dist/carla-0.9.16-cp312-cp312-manylinux_2_31_x86_64.whl"
+    ],
+    "cmake.ignoreCMakeListsMissing": true
+}

@@ -1,0 +1,52 @@
+[0.050s] Invoking command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kanat/ur5_new_ws/src/moveit_commander_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/moveit_commander_cpp
+[0.110s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.923s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.949s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.087s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.131s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.189s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.544s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.554s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.851s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.176s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[2.232s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[3.497s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.651s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.683s] -- Found rclcpp_lifecycle: 28.1.13 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[3.834s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[4.034s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.617s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[4.834s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[4.948s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[5.124s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[5.220s] -- Found my_interfaces: 0.0.0 (/home/kanat/ros2_udemy_beginner/install/my_interfaces/share/my_interfaces/cmake)
+[5.727s] -- Configuring done (5.6s)
+[5.840s] -- Generating done (0.1s)
+[5.867s] -- Build files have been written to: /home/kanat/ur5_new_ws/build/moveit_commander_cpp
+[5.914s] Invoked command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kanat/ur5_new_ws/src/moveit_commander_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kanat/ur5_new_ws/install/moveit_commander_cpp
+[5.922s] Invoking command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/moveit_commander_cpp -- -j20 -l20
+[6.187s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_planning_exe.dir/src/moveit_plan_publisher.cpp.o[0m
+[38.465s] [100%] [32m[1mLinking CXX executable moveit_planning_exe[0m
+[39.989s] [100%] Built target moveit_planning_exe
+[40.034s] Invoked command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kanat/ur5_new_ws/build/moveit_commander_cpp -- -j20 -l20
+[40.072s] Invoking command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kanat/ur5_new_ws/build/moveit_commander_cpp
+[40.100s] -- Install configuration: ""
+[40.102s] -- Execute custom install script
+[40.104s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/lib/moveit_commander_cpp/moveit_planning_exe
+[40.105s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/package_run_dependencies/moveit_commander_cpp
+[40.106s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/parent_prefix_path/moveit_commander_cpp
+[40.107s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/ament_prefix_path.sh
+[40.107s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/ament_prefix_path.dsv
+[40.108s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/path.sh
+[40.108s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/environment/path.dsv
+[40.108s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.bash
+[40.109s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.sh
+[40.109s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.zsh
+[40.109s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/local_setup.dsv
+[40.110s] -- Symlinking: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.dsv
+[40.140s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/ament_index/resource_index/packages/moveit_commander_cpp
+[40.140s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/cmake/moveit_commander_cppConfig.cmake
+[40.141s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/cmake/moveit_commander_cppConfig-version.cmake
+[40.141s] -- Up-to-date symlink: /home/kanat/ur5_new_ws/install/moveit_commander_cpp/share/moveit_commander_cpp/package.xml
+[40.147s] Invoked command in '/home/kanat/ur5_new_ws/build/moveit_commander_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kanat/ur5_new_ws/install/ur5_control:/home/kanat/turtlebot3_ws/install/turtlebot3_control:/home/kanat/ros2_udemy_beginner/install/my_ros_services_py:/home/kanat/ros2_udemy_beginner/install/my_pkg_py:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kanat/ur5_new_ws/build/moveit_commander_cpp

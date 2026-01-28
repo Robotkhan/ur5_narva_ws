@@ -1,0 +1,1 @@
+/home/kanat/ur5_new_ws/src/ur5_bringup/launch/ur5_gazebo.launch.py
