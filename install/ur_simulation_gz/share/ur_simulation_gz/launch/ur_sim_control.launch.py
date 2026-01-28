@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/src/Universal_Robots_ROS2_GZ_Simulation/ur_simulation_gz/launch/ur_sim_control.launch.py

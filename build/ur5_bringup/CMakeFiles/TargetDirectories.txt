@@ -1,9 +1,0 @@
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/uninstall.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/ur5_bringup_uninstall.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/test.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/edit_cache.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/rebuild_cache.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/list_install_components.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/install.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/install/local.dir
-/home/kanat/ur5_new_ws/build/ur5_bringup/CMakeFiles/install/strip.dir

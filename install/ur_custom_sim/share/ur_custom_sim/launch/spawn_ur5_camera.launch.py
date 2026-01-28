@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/src/ur_custom_sim/launch/spawn_ur5_camera.launch.py

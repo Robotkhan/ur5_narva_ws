@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/build/moveit_commander_cpp/ament_cmake_core/moveit_commander_cppConfig.cmake

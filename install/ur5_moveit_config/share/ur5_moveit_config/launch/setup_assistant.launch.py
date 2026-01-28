@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/src/ur5_moveit_config/launch/setup_assistant.launch.py

@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/src/ur_custom_sim/launch/view_ur5_camera_gripper.launch.py

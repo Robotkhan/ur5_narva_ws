@@ -1,1 +1,0 @@
-/home/kanat/ur5_new_ws/build/ur5_bringup/ament_cmake_environment_hooks/local_setup.bash
